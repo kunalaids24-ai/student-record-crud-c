@@ -1,10 +1,32 @@
-# student-record-crud-c
+# Student Record Management System (C)
 
-A menu-driven console application written in C that lets users perform full CRUD operations (Create, Read, Update, Delete) on student records.
-Student data (ID, name, age, marks) is permanently stored in a binary file (students.dat). The program demonstrates basic file handling, structures, and modular programming in C.
-### Main learning outcomes / features shown:
-     -  Working with structures (struct)
-     -  Binary file read/write operations (fread, fwrite, fseek)
-     -  File-based CRUD (Create / Read / Update / Delete)
-     - Menu-driven console interface
-     - Temporary file technique for safe record deletion
+A console-based **Student Record CRUD** application written in C language.  
+It demonstrates full **Create, Read, Update, Delete** operations with permanent storage using binary files.
+
+## Features
+
+- Add new student records (ID, Name, Age, Marks)
+- View all saved student records in a neat table format
+- Update any student's details using their ID
+- Delete a student record by ID
+- Data is stored permanently in a binary file (`students.dat`)
+- Simple menu-driven interface
+
+## Technologies / Concepts Used
+
+- C programming language
+- Structures (`struct Student`)
+- Binary file handling (`fread`, `fwrite`, `fseek`, `remove`, `rename`)
+- File-based persistent storage (no database needed)
+- Modular functions + menu-driven program flow
+- Switch-case and loop control
+
+## How to Compile and Run
+
+```bash
+# Compile the program
+gcc main.c -o student
+
+# Run the program
+./student          # Linux / macOS
+student.exe        # Windows (if compiled with MinGW / Dev-C++)
